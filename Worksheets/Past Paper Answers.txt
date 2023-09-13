@@ -1,0 +1,47 @@
+// Part A - Answer
+
+using System;
+
+public class PowerBank{
+//created the requested attributes
+float MaH;
+string USBType;
+string Brand;
+
+//create the constructor
+public PowerBank(float m,string u, string b){
+this.MaH = m;
+this.USBType = u;
+this.Brand = b;
+}
+
+// create the method
+public double getMiliAmp(double mval){
+double answer;
+answer = Math.Pow(MaH, mval);
+return answer;
+}
+}
+
+// Part B - Answer
+
+public class NewPowerBank{
+public static void Main(String[] args){
+//get the user inputs
+Console.Write("Enter the value to MaH: ");
+float mah = float.Parse(Console.ReadLine());
+Console.Write("Enter the value to USB Type: ");
+string usb = Console.ReadLine();
+Console.Write("Enter the value to Brand: ");
+string brand = Console.ReadLine();
+
+//object creation
+PowerBank pb = new PowerBank(mah, usb, brand);
+
+//call the funtion
+double answer1 = pb.getMiliAmp(2.5);
+Console.WriteLine("Answer: "+answer1);
+
+
+}
+}
