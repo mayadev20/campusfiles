@@ -1,0 +1,7 @@
+BEGIN TempCal
+    MAIN:
+        tempC <- ASK USER WITH PROMPT "Enter Temperature in Celsius"
+        tempF <- (9/5*tempC)+32
+        PRINT "Temperature in Fahrenheit: " tempF
+    END MAIN
+END
