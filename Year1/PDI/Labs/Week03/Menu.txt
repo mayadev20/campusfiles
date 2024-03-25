@@ -1,0 +1,44 @@
+PROGRAM Menu
+	MAIN:
+		OUTPUT "Welcome to Programming Design and Implementation"
+		OUTPUT "What would you like to do?"
+		OUTPUT "> 1. Sum of 2 Integers"
+		OUTPUT "> 2. Product of 2 Integers"
+		OUTPUT "> 3. Check if 2 Integers are Divisible"
+		OUTPUT "> 0. Exit"
+		INPUT choice
+		CASE choice
+			1:
+				OUTPUT "Enter first number: "
+				INPUT numOne
+				OUTPUT "Enter second number: "
+				INPUT numTwo
+				sum = numOne + numTwo
+				OUTPUT "The sum is " sum
+			2:
+				OUTPUT "Enter first number: "
+				INPUT numOne
+				OUTPUT "Enter second number: "
+				INPUT numTwo
+				product = numOne * numTwo
+				OUTPUT "The product is " product
+			3:
+				OUTPUT "Enter first number: "
+				INPUT numOne
+				OUTPUT "Enter second number: "
+				INPUT numTwo
+				IF numTwo IS NOT 0:
+					modulus = numOne % numTwo
+					IF modulus IS 0:
+						OUTPUT "The numbers are divisible."
+					ELSE:
+						OUTPUT "The numbers are not divisible."
+					END IF
+				END IF
+			0:
+				OUTPUT "Thank you for using this program. Goodbye!"
+			DEFAULT:
+				OUTPUT "Error: incorrect value input to program."
+		END CASE
+	END MAIN
+END
