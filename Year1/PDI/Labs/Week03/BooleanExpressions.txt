@@ -1,0 +1,8 @@
+(1) 
+a) (luca%2 == 0) && (scott%2 !=0)
+b) (jane='S') || (matthew='S')
+c) (jane == matthew)
+d) (sarah == tony)
+e) (luke >0) || ((sarah>25) && (sarah<=125))
+
+
